@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hw.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="address">Адрес:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="chopsticksQuantity">Количество палочек:</label>
+        <input type="number" id="chopsticksQuantity" name="chopsticksQuantity" min="0">
+
+        <label for="chopsticksType">Вид палочек:</label>
+        <select id="chopsticksType" name="chopsticksType">
+            <option value="regular">Обычные</option>
+            <option value="training">Учебные</option>
+        </select>
+
+        <label for="sushiList">Список суши:</label>
+        <select id="sushiList" name="sushiList" multiple required>
+ 
+            <option value="sushi1">  Классический ролл</option>
+            <option value="sushi2">Филадельфия ролл</option>
+            <option value="sushi3">Калифорния ролл</option>
+            <option value="sushi4">Спайси тунец</option>
+            <option value="sushi5">Унаги нигири</option>
+            <option value="sushi6">Темпура ролл</option>
+        </select>
+
+        <label for="napkins">Нужны ли салфетки?</label>
+        <input type="checkbox" id="napkins" name="napkins">
+
+        <label for="comments">Дополнительный комментарий:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Заказать суши</button>
+    </form>
+
+</body>
+</html>

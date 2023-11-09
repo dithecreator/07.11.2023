@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация в онлайновой игре</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url("fon1.jpeg");
+    background-repeat: no-repeat;
+    background-size: 125%;
+    color:rgb(190, 223, 244);
+    text-shadow:0 0 5px white;
+        }
+        form {
+            width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+       
+        }
+        button {
+            background-color: #00fbff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4572a0;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="post">
+        <label for="nickname">Ник:</label>
+        <input type="text" id="nickname" name="nickname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="dob">Дата рождения:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <label for="country">Страна:</label>
+        <input type="text" id="country" name="country" list="countries" >
+        <datalist id="countries">
+            <option value="Россия">
+            <option value="США">
+            <option value="Канада">
+        </datalist>
+
+        <label for="heroIp">IP героя:</label>
+        <input type="text" id="heroIp" name="heroIp">
+
+        <label for="gamingExperience">Игровой опыт в годах (от 0 до 60):</label>
+        <input type="number" id="gamingExperience" name="gamingExperience" min="0" max="60">
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+</body>
+</html>
